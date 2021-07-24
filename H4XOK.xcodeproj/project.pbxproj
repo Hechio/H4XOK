@@ -13,6 +13,10 @@
 		5B6A23EE24F2D553004934E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A23ED24F2D553004934E4 /* Assets.xcassets */; };
 		5B6A23F124F2D553004934E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A23F024F2D553004934E4 /* Preview Assets.xcassets */; };
 		5B6A23F424F2D553004934E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A23F224F2D553004934E4 /* LaunchScreen.storyboard */; };
+		5B6A23FD24F2DB0C004934E4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A23FC24F2DB0C004934E4 /* NetworkManager.swift */; };
+		5B6A23FF24F2DF72004934E4 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A23FE24F2DF72004934E4 /* PostData.swift */; };
+		5B6A240224F2E6B9004934E4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A240124F2E6B9004934E4 /* DetailView.swift */; };
+		5BA7008A25078627005348F7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7008925078615005348F7 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5B6A23F024F2D553004934E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B6A23F324F2D553004934E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B6A23F524F2D553004934E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6A23FC24F2DB0C004934E4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5B6A23FE24F2DF72004934E4 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		5B6A240124F2E6B9004934E4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5BA7008925078615005348F7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		5B6A23E624F2D515004934E4 /* H4XOK */ = {
 			isa = PBXGroup;
 			children = (
+				5B6A240024F2E687004934E4 /* Views */,
+				5B6A23FB24F2DA5F004934E4 /* Models */,
 				5B6A23E724F2D515004934E4 /* AppDelegate.swift */,
 				5B6A23E924F2D515004934E4 /* SceneDelegate.swift */,
-				5B6A23EB24F2D515004934E4 /* ContentView.swift */,
 				5B6A23ED24F2D553004934E4 /* Assets.xcassets */,
 				5B6A23F224F2D553004934E4 /* LaunchScreen.storyboard */,
 				5B6A23F524F2D553004934E4 /* Info.plist */,
@@ -73,6 +82,25 @@
 				5B6A23F024F2D553004934E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B6A23FB24F2DA5F004934E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A23FC24F2DB0C004934E4 /* NetworkManager.swift */,
+				5B6A23FE24F2DF72004934E4 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B6A240024F2E687004934E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A23EB24F2D515004934E4 /* ContentView.swift */,
+				5B6A240124F2E6B9004934E4 /* DetailView.swift */,
+				5BA7008925078615005348F7 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6A23FF24F2DF72004934E4 /* PostData.swift in Sources */,
+				5B6A240224F2E6B9004934E4 /* DetailView.swift in Sources */,
+				5B6A23FD24F2DB0C004934E4 /* NetworkManager.swift in Sources */,
 				5B6A23E824F2D515004934E4 /* AppDelegate.swift in Sources */,
 				5B6A23EA24F2D515004934E4 /* SceneDelegate.swift in Sources */,
 				5B6A23EC24F2D515004934E4 /* ContentView.swift in Sources */,
+				5BA7008A25078627005348F7 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
